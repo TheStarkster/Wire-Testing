@@ -1,0 +1,48 @@
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\WireLibrary.dll.config
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\WireLibrary.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\WireLibrary.pdb
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.xml
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\obj\Debug\WireLibrary.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireLibrary\obj\Debug\WireLibrary.pdb
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\WireLibrary.dll.config
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\WireLibrary.dll
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\WireLibrary.pdb
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.dll
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.xml
+C:\Gurkaran\WireTestingProject\WireLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Gurkaran\WireTestingProject\WireLibrary\obj\Debug\WireLibrary.csprojResolveAssemblyReference.cache
+C:\Gurkaran\WireTestingProject\WireLibrary\obj\Debug\WireLibrary.dll
+C:\Gurkaran\WireTestingProject\WireLibrary\obj\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.dll.config
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.pdb
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.dll.config
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.pdb
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.xml
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.dll.config
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireLibrary\obj\Debug\WireLibrary.pdb

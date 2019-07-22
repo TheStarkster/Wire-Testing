@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52B5D657-33B1-43DC-B404-23A3CA9C4593}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WireLibrary</RootNamespace>
+    <AssemblyName>WireLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tb_Catagory.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Degree.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Employee.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ParamList.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ParamListValues.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ParamName.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ParamTypes.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ParamValue.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Product.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Reports.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Size.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Unit.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ValuesOfReports.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ValuesOfReport_Lists.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Wirename.cs">
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WireModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WireModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WireModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WireModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WireModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WireModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="WireModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WireModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="WireModel.edmx.diagram">
+      <DependentUpon>WireModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WireModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WireModel.edmx</DependentUpon>
+      <LastGenOutput>WireModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WireModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WireModel.edmx</DependentUpon>
+      <LastGenOutput>WireModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

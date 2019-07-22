@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a30fdcff3eec4ec683cf67ca38f76db2" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Catagory" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Degree" Width="1.5" PointX="6" PointY="18.375" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Employee" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ParamList" Width="1.5" PointX="5.25" PointY="9.125" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ParamListValues" Width="1.5" PointX="10.5" PointY="9.5" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ParamName" Width="1.5" PointX="3" PointY="8" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ParamTypes" Width="1.5" PointX="0.75" PointY="10.125" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ParamValue" Width="1.5" PointX="5.25" PointY="5.625" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Product" Width="1.5" PointX="8.25" PointY="15.625" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Reports" Width="1.5" PointX="10.5" PointY="15.25" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Size" Width="1.5" PointX="6" PointY="14.5" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Unit" Width="1.5" PointX="0.75" PointY="17.25" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists" Width="1.5" PointX="12.75" PointY="9.125" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_ValuesOfReports" Width="1.5" PointX="7.5" PointY="9.125" />
+        <EntityTypeShape EntityType="WireTestSoftwareDBModel.tb_Wirename" Width="1.5" PointX="0.75" PointY="13.125" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamName_tb_Catagory" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_Product_tb_Degree" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamName" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamTypes" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamList_tb_Unit" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamList" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamList" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamList" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamName" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamName_tb_ParamName" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_ParamTypes" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_Wirename" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_ParamName" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamName" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamName" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_Product" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_Product_tb_Size" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_Product_tb_Wirename" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_Reports_tb_Product" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Product" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_Reports" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Reports" />
+        <AssociationConnector Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

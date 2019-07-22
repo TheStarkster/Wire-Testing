@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WireTestSoftwareDBModelStoreContainer" CdmEntityContainer="WireTestSoftwareDBEntities">
+    <EntitySetMapping Name="tb_Catagory">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Catagory">
+        <MappingFragment StoreEntitySet="tb_Catagory">
+          <ScalarProperty Name="CatagoryName" ColumnName="CatagoryName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Degree">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Degree">
+        <MappingFragment StoreEntitySet="tb_Degree">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Employee">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Employee">
+        <MappingFragment StoreEntitySet="tb_Employee">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ParamList">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamList">
+        <MappingFragment StoreEntitySet="tb_ParamList">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ParamTypeID" ColumnName="ParamTypeID" />
+          <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ParamListValues">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamListValues">
+        <MappingFragment StoreEntitySet="tb_ParamListValues">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Val" ColumnName="Val" />
+          <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+          <ScalarProperty Name="ParamListID" ColumnName="ParamListID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ParamName">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamName">
+        <MappingFragment StoreEntitySet="tb_ParamName">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="CatagoryID" ColumnName="CatagoryID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ShowParam" ColumnName="ShowParam" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="WireID" ColumnName="WireID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ParamTypes">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamTypes">
+        <MappingFragment StoreEntitySet="tb_ParamTypes">
+          <ScalarProperty Name="ParamName" ColumnName="ParamName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ParamValue">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamValue">
+        <MappingFragment StoreEntitySet="tb_ParamValue">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Product">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Product">
+        <MappingFragment StoreEntitySet="tb_Product">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="DegreeID" ColumnName="DegreeID" />
+          <ScalarProperty Name="WirenameID" ColumnName="WirenameID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Reports">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Reports">
+        <MappingFragment StoreEntitySet="tb_Reports">
+          <ScalarProperty Name="Clean" ColumnName="Clean" />
+          <ScalarProperty Name="InvNo" ColumnName="InvNo" />
+          <ScalarProperty Name="Cover" ColumnName="Cover" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Trace" ColumnName="Trace" />
+          <ScalarProperty Name="Wrapper" ColumnName="Wrapper" />
+          <ScalarProperty Name="Box" ColumnName="Box" />
+          <ScalarProperty Name="Polythene" ColumnName="Polythene" />
+          <ScalarProperty Name="Edge" ColumnName="Edge" />
+          <ScalarProperty Name="Surface" ColumnName="Surface" />
+          <ScalarProperty Name="Winding" ColumnName="Winding" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+          <ScalarProperty Name="OtherSpec" ColumnName="OtherSpec" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Size">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Size">
+        <MappingFragment StoreEntitySet="tb_Size">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Unit">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Unit">
+        <MappingFragment StoreEntitySet="tb_Unit">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ValuesOfReport_Lists">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists">
+        <MappingFragment StoreEntitySet="tb_ValuesOfReport_Lists">
+          <ScalarProperty Name="Rand_Numb" ColumnName="Rand_Numb" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+          <ScalarProperty Name="ParamListID" ColumnName="ParamListID" />
+          <ScalarProperty Name="ValRepID" ColumnName="ValRepID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ValuesOfReports">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ValuesOfReports">
+        <MappingFragment StoreEntitySet="tb_ValuesOfReports">
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ParamNameListID" ColumnName="ParamNameListID" />
+          <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Wirename">
+      <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Wirename">
+        <MappingFragment StoreEntitySet="tb_Wirename">
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Wirename" ColumnName="Wirename" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

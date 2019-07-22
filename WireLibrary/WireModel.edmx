@@ -1,0 +1,1499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WireTestSoftwareDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_Catagory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CatagoryName" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="tb_Degree">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="CreateTime" Type="date" />
+          <Property Name="ModifyBy" Type="int" />
+          <Property Name="ModifiedDate" Type="date" />
+          <Property Name="ModifiedTime" Type="time" Precision="7" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Enable" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nchar" MaxLength="10" />
+          <Property Name="Password" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tb_ParamList">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="500" />
+          <Property Name="ParamNameID" Type="int" />
+          <Property Name="ParamTypeID" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="UnitID" Type="int" />
+          <Property Name="Enable" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_ParamListValues">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParamListID" Type="int" />
+          <Property Name="ParamNameID" Type="int" />
+          <Property Name="Val" Type="varchar" MaxLength="500" />
+          <Property Name="Val2" Type="varchar" MaxLength="500" />
+          <Property Name="Tolerance" Type="varchar" MaxLength="500" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tb_ParamName">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="500" />
+          <Property Name="Type" Type="int" />
+          <Property Name="WireID" Type="int" />
+          <Property Name="UnitID" Type="int" />
+          <Property Name="Formula" Type="varchar" MaxLength="5000" />
+          <Property Name="ShowParam" Type="int" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="CreateTime" Type="date" />
+          <Property Name="ModifyBy" Type="int" />
+          <Property Name="ModifiedDate" Type="date" />
+          <Property Name="ModifiedTime" Type="time" Precision="7" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="CatagoryID" Type="int" />
+          <Property Name="Enable" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_ParamTypes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParamName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tb_ParamValue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParamNameID" Type="int" />
+          <Property Name="ProductID" Type="int" />
+          <Property Name="Val1" Type="varchar" MaxLength="50" />
+          <Property Name="Val2" Type="varchar" MaxLength="50" />
+          <Property Name="Tolerance" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tb_Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WirenameID" Type="int" />
+          <Property Name="DegreeID" Type="int" />
+          <Property Name="SizeID" Type="int" />
+          <Property Name="Grade" Type="int" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="CreateTime" Type="date" />
+          <Property Name="ModifyBy" Type="int" />
+          <Property Name="ModifiedDate" Type="date" />
+          <Property Name="ModifiedTime" Type="time" Precision="7" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Enable" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Reports">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReportName" Type="varchar" MaxLength="500" />
+          <Property Name="Result" Type="varchar" MaxLength="100" />
+          <Property Name="ProductID" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Enable" Type="int" />
+          <Property Name="Cover" Type="varchar" MaxLength="1000" />
+          <Property Name="Customer" Type="varchar" MaxLength="1000" />
+          <Property Name="OtherSpec" Type="varchar" MaxLength="2000" />
+          <Property Name="InvNo" Type="varchar" MaxLength="1000" />
+          <Property Name="InvDate" Type="date" />
+          <Property Name="Qty" Type="varchar" MaxLength="100" />
+          <Property Name="Winding" Type="varchar" MaxLength="50" />
+          <Property Name="Surface" Type="varchar" MaxLength="50" />
+          <Property Name="Clean" Type="varchar" MaxLength="50" />
+          <Property Name="Edge" Type="varchar" MaxLength="50" />
+          <Property Name="Polythene" Type="varchar" MaxLength="50" />
+          <Property Name="Box" Type="varchar" MaxLength="50" />
+          <Property Name="Wrapper" Type="varchar" MaxLength="50" />
+          <Property Name="Trace" Type="varchar" MaxLength="50" />
+          <Property Name="Weight" Type="varchar" MaxLength="50" />
+          <Property Name="Size" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tb_Size">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Size" Type="varchar" MaxLength="500" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="CreateTime" Type="date" />
+          <Property Name="ModifyBy" Type="int" />
+          <Property Name="ModifiedDate" Type="date" />
+          <Property Name="ModifiedTime" Type="time" Precision="7" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Enable" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Unit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Unit" Type="varchar" MaxLength="500" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tb_ValuesOfReport_Lists">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ValRepID" Type="int" />
+          <Property Name="ParamListID" Type="int" />
+          <Property Name="ParamNameID" Type="int" />
+          <Property Name="ReportID" Type="int" />
+          <Property Name="Val1" Type="varchar" MaxLength="500" />
+          <Property Name="Tolerance" Type="varchar" MaxLength="500" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="500" />
+          <Property Name="Rand_Numb" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_ValuesOfReports">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParamNameID" Type="int" />
+          <Property Name="ParamNameListID" Type="int" />
+          <Property Name="ProductID" Type="int" />
+          <Property Name="Val1" Type="varchar" MaxLength="50" />
+          <Property Name="Val2" Type="varchar" MaxLength="50" />
+          <Property Name="Tolerance" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="ReportID" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Wirename">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Wirename" Type="varchar" MaxLength="500" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="CreateTime" Type="date" />
+          <Property Name="ModifyBy" Type="int" />
+          <Property Name="ModifiedDate" Type="date" />
+          <Property Name="ModifiedTime" Type="time" Precision="7" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Enable" Type="int" />
+        </EntityType>
+        <Association Name="FK_tb_ParamList_tb_ParamName">
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="0..1" />
+          <End Role="tb_ParamList" Type="Self.tb_ParamList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamList">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamList_tb_ParamTypes">
+          <End Role="tb_ParamTypes" Type="Self.tb_ParamTypes" Multiplicity="0..1" />
+          <End Role="tb_ParamList" Type="Self.tb_ParamList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamList">
+              <PropertyRef Name="ParamTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamList_tb_Unit">
+          <End Role="tb_Unit" Type="Self.tb_Unit" Multiplicity="0..1" />
+          <End Role="tb_ParamList" Type="Self.tb_ParamList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Unit">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamList">
+              <PropertyRef Name="UnitID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamListValues_tb_ParamList">
+          <End Role="tb_ParamList" Type="Self.tb_ParamList" Multiplicity="0..1" />
+          <End Role="tb_ParamListValues" Type="Self.tb_ParamListValues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamList">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamListValues">
+              <PropertyRef Name="ParamListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamListValues_tb_ParamName">
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="0..1" />
+          <End Role="tb_ParamListValues" Type="Self.tb_ParamListValues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamListValues">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamName_tb_Catagory">
+          <End Role="tb_Catagory" Type="Self.tb_Catagory" Multiplicity="0..1" />
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Catagory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="CatagoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamName_tb_ParamName">
+          <End Role="tb_Unit" Type="Self.tb_Unit" Multiplicity="0..1" />
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Unit">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="UnitID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamNames_tb_ParamTypes">
+          <End Role="tb_ParamTypes" Type="Self.tb_ParamTypes" Multiplicity="0..1" />
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamNames_tb_Wirename">
+          <End Role="tb_Wirename" Type="Self.tb_Wirename" Multiplicity="0..1" />
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Wirename">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="WireID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamValue_tb_ParamName">
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="0..1" />
+          <End Role="tb_ParamValue" Type="Self.tb_ParamValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamValue">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamValue_tb_Product">
+          <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="0..1" />
+          <End Role="tb_ParamValue" Type="Self.tb_ParamValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamValue">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Product_tb_Degree">
+          <End Role="tb_Degree" Type="Self.tb_Degree" Multiplicity="0..1" />
+          <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Degree">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Product">
+              <PropertyRef Name="DegreeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Product_tb_Size">
+          <End Role="tb_Size" Type="Self.tb_Size" Multiplicity="0..1" />
+          <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Size">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Product">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Product_tb_Wirename">
+          <End Role="tb_Wirename" Type="Self.tb_Wirename" Multiplicity="0..1" />
+          <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Wirename">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Product">
+              <PropertyRef Name="WirenameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Reports_tb_Product">
+          <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="0..1" />
+          <End Role="tb_Reports" Type="Self.tb_Reports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Reports">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_ParamList">
+          <End Role="tb_ParamList" Type="Self.tb_ParamList" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReport_Lists" Type="Self.tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamList">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ParamListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_ParamName">
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReport_Lists" Type="Self.tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_Reports">
+          <End Role="tb_Reports" Type="Self.tb_Reports" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReport_Lists" Type="Self.tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Reports">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ReportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports">
+          <End Role="tb_ValuesOfReports" Type="Self.tb_ValuesOfReports" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReport_Lists" Type="Self.tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ValuesOfReports">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ValRepID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_ParamList">
+          <End Role="tb_ParamList" Type="Self.tb_ParamList" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReports" Type="Self.tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamList">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ParamNameListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_ParamName">
+          <End Role="tb_ParamName" Type="Self.tb_ParamName" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReports" Type="Self.tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_Product">
+          <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReports" Type="Self.tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_Reports">
+          <End Role="tb_Reports" Type="Self.tb_Reports" Multiplicity="0..1" />
+          <End Role="tb_ValuesOfReports" Type="Self.tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Reports">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ReportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="WireTestSoftwareDBModelStoreContainer">
+          <EntitySet Name="tb_Catagory" EntityType="Self.tb_Catagory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Degree" EntityType="Self.tb_Degree" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Employee" EntityType="Self.tb_Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ParamList" EntityType="Self.tb_ParamList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ParamListValues" EntityType="Self.tb_ParamListValues" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ParamName" EntityType="Self.tb_ParamName" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ParamTypes" EntityType="Self.tb_ParamTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ParamValue" EntityType="Self.tb_ParamValue" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Product" EntityType="Self.tb_Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Reports" EntityType="Self.tb_Reports" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Size" EntityType="Self.tb_Size" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Unit" EntityType="Self.tb_Unit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ValuesOfReport_Lists" EntityType="Self.tb_ValuesOfReport_Lists" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_ValuesOfReports" EntityType="Self.tb_ValuesOfReports" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Wirename" EntityType="Self.tb_Wirename" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tb_ParamList_tb_ParamName" Association="Self.FK_tb_ParamList_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamList_tb_ParamTypes" Association="Self.FK_tb_ParamList_tb_ParamTypes">
+            <End Role="tb_ParamTypes" EntitySet="tb_ParamTypes" />
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamList_tb_Unit" Association="Self.FK_tb_ParamList_tb_Unit">
+            <End Role="tb_Unit" EntitySet="tb_Unit" />
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamListValues_tb_ParamList" Association="Self.FK_tb_ParamListValues_tb_ParamList">
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+            <End Role="tb_ParamListValues" EntitySet="tb_ParamListValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamListValues_tb_ParamName" Association="Self.FK_tb_ParamListValues_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ParamListValues" EntitySet="tb_ParamListValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamName_tb_Catagory" Association="Self.FK_tb_ParamName_tb_Catagory">
+            <End Role="tb_Catagory" EntitySet="tb_Catagory" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamName_tb_ParamName" Association="Self.FK_tb_ParamName_tb_ParamName">
+            <End Role="tb_Unit" EntitySet="tb_Unit" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamNames_tb_ParamTypes" Association="Self.FK_tb_ParamNames_tb_ParamTypes">
+            <End Role="tb_ParamTypes" EntitySet="tb_ParamTypes" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamNames_tb_Wirename" Association="Self.FK_tb_ParamNames_tb_Wirename">
+            <End Role="tb_Wirename" EntitySet="tb_Wirename" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamValue_tb_ParamName" Association="Self.FK_tb_ParamValue_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ParamValue" EntitySet="tb_ParamValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamValue_tb_Product" Association="Self.FK_tb_ParamValue_tb_Product">
+            <End Role="tb_Product" EntitySet="tb_Product" />
+            <End Role="tb_ParamValue" EntitySet="tb_ParamValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Product_tb_Degree" Association="Self.FK_tb_Product_tb_Degree">
+            <End Role="tb_Degree" EntitySet="tb_Degree" />
+            <End Role="tb_Product" EntitySet="tb_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Product_tb_Size" Association="Self.FK_tb_Product_tb_Size">
+            <End Role="tb_Size" EntitySet="tb_Size" />
+            <End Role="tb_Product" EntitySet="tb_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Product_tb_Wirename" Association="Self.FK_tb_Product_tb_Wirename">
+            <End Role="tb_Wirename" EntitySet="tb_Wirename" />
+            <End Role="tb_Product" EntitySet="tb_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Reports_tb_Product" Association="Self.FK_tb_Reports_tb_Product">
+            <End Role="tb_Product" EntitySet="tb_Product" />
+            <End Role="tb_Reports" EntitySet="tb_Reports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_ParamList" Association="Self.FK_tb_ValuesOfReport_Lists_tb_ParamList">
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_ParamName" Association="Self.FK_tb_ValuesOfReport_Lists_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_Reports" Association="Self.FK_tb_ValuesOfReport_Lists_tb_Reports">
+            <End Role="tb_Reports" EntitySet="tb_Reports" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports" Association="Self.FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports">
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_ParamList" Association="Self.FK_tb_ValuesOfReports_tb_ParamList">
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_ParamName" Association="Self.FK_tb_ValuesOfReports_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_Product" Association="Self.FK_tb_ValuesOfReports_tb_Product">
+            <End Role="tb_Product" EntitySet="tb_Product" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_Reports" Association="Self.FK_tb_ValuesOfReports_tb_Reports">
+            <End Role="tb_Reports" EntitySet="tb_Reports" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WireTestSoftwareDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="WireTestSoftwareDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_Catagory" EntityType="WireTestSoftwareDBModel.tb_Catagory" />
+          <EntitySet Name="tb_Degree" EntityType="WireTestSoftwareDBModel.tb_Degree" />
+          <EntitySet Name="tb_Employee" EntityType="WireTestSoftwareDBModel.tb_Employee" />
+          <EntitySet Name="tb_ParamList" EntityType="WireTestSoftwareDBModel.tb_ParamList" />
+          <EntitySet Name="tb_ParamListValues" EntityType="WireTestSoftwareDBModel.tb_ParamListValues" />
+          <EntitySet Name="tb_ParamName" EntityType="WireTestSoftwareDBModel.tb_ParamName" />
+          <EntitySet Name="tb_ParamTypes" EntityType="WireTestSoftwareDBModel.tb_ParamTypes" />
+          <EntitySet Name="tb_ParamValue" EntityType="WireTestSoftwareDBModel.tb_ParamValue" />
+          <EntitySet Name="tb_Product" EntityType="WireTestSoftwareDBModel.tb_Product" />
+          <EntitySet Name="tb_Reports" EntityType="WireTestSoftwareDBModel.tb_Reports" />
+          <EntitySet Name="tb_Size" EntityType="WireTestSoftwareDBModel.tb_Size" />
+          <EntitySet Name="tb_Unit" EntityType="WireTestSoftwareDBModel.tb_Unit" />
+          <EntitySet Name="tb_ValuesOfReport_Lists" EntityType="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists" />
+          <EntitySet Name="tb_ValuesOfReports" EntityType="WireTestSoftwareDBModel.tb_ValuesOfReports" />
+          <EntitySet Name="tb_Wirename" EntityType="WireTestSoftwareDBModel.tb_Wirename" />
+          <AssociationSet Name="FK_tb_ParamName_tb_Catagory" Association="WireTestSoftwareDBModel.FK_tb_ParamName_tb_Catagory">
+            <End Role="tb_Catagory" EntitySet="tb_Catagory" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Product_tb_Degree" Association="WireTestSoftwareDBModel.FK_tb_Product_tb_Degree">
+            <End Role="tb_Degree" EntitySet="tb_Degree" />
+            <End Role="tb_Product" EntitySet="tb_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamList_tb_ParamName" Association="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamList_tb_ParamTypes" Association="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamTypes">
+            <End Role="tb_ParamTypes" EntitySet="tb_ParamTypes" />
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamList_tb_Unit" Association="WireTestSoftwareDBModel.FK_tb_ParamList_tb_Unit">
+            <End Role="tb_Unit" EntitySet="tb_Unit" />
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamListValues_tb_ParamList" Association="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamList">
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+            <End Role="tb_ParamListValues" EntitySet="tb_ParamListValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_ParamList" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamList">
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_ParamList" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamList">
+            <End Role="tb_ParamList" EntitySet="tb_ParamList" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamListValues_tb_ParamName" Association="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ParamListValues" EntitySet="tb_ParamListValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamName_tb_ParamName" Association="WireTestSoftwareDBModel.FK_tb_ParamName_tb_ParamName">
+            <End Role="tb_Unit" EntitySet="tb_Unit" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamNames_tb_ParamTypes" Association="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_ParamTypes">
+            <End Role="tb_ParamTypes" EntitySet="tb_ParamTypes" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamNames_tb_Wirename" Association="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_Wirename">
+            <End Role="tb_Wirename" EntitySet="tb_Wirename" />
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamValue_tb_ParamName" Association="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ParamValue" EntitySet="tb_ParamValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_ParamName" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_ParamName" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamName">
+            <End Role="tb_ParamName" EntitySet="tb_ParamName" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ParamValue_tb_Product" Association="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_Product">
+            <End Role="tb_Product" EntitySet="tb_Product" />
+            <End Role="tb_ParamValue" EntitySet="tb_ParamValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Product_tb_Size" Association="WireTestSoftwareDBModel.FK_tb_Product_tb_Size">
+            <End Role="tb_Size" EntitySet="tb_Size" />
+            <End Role="tb_Product" EntitySet="tb_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Product_tb_Wirename" Association="WireTestSoftwareDBModel.FK_tb_Product_tb_Wirename">
+            <End Role="tb_Wirename" EntitySet="tb_Wirename" />
+            <End Role="tb_Product" EntitySet="tb_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Reports_tb_Product" Association="WireTestSoftwareDBModel.FK_tb_Reports_tb_Product">
+            <End Role="tb_Product" EntitySet="tb_Product" />
+            <End Role="tb_Reports" EntitySet="tb_Reports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_Product" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Product">
+            <End Role="tb_Product" EntitySet="tb_Product" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_Reports" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_Reports">
+            <End Role="tb_Reports" EntitySet="tb_Reports" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReports_tb_Reports" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Reports">
+            <End Role="tb_Reports" EntitySet="tb_Reports" />
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports" Association="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports">
+            <End Role="tb_ValuesOfReports" EntitySet="tb_ValuesOfReports" />
+            <End Role="tb_ValuesOfReport_Lists" EntitySet="tb_ValuesOfReport_Lists" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tb_Catagory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CatagoryName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamName_tb_Catagory" FromRole="tb_Catagory" ToRole="tb_ParamName" />
+        </EntityType>
+        <EntityType Name="tb_Degree">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="CreateTime" Type="DateTime" Precision="0" />
+          <Property Name="ModifyBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+          <Property Name="ModifiedTime" Type="Time" Precision="7" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Enable" Type="Int32" />
+          <NavigationProperty Name="tb_Product" Relationship="WireTestSoftwareDBModel.FK_tb_Product_tb_Degree" FromRole="tb_Degree" ToRole="tb_Product" />
+        </EntityType>
+        <EntityType Name="tb_Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tb_ParamList">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ParamNameID" Type="Int32" />
+          <Property Name="ParamTypeID" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UnitID" Type="Int32" />
+          <Property Name="Enable" Type="Int32" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamName" FromRole="tb_ParamList" ToRole="tb_ParamName" />
+          <NavigationProperty Name="tb_ParamTypes" Relationship="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamTypes" FromRole="tb_ParamList" ToRole="tb_ParamTypes" />
+          <NavigationProperty Name="tb_Unit" Relationship="WireTestSoftwareDBModel.FK_tb_ParamList_tb_Unit" FromRole="tb_ParamList" ToRole="tb_Unit" />
+          <NavigationProperty Name="tb_ParamListValues" Relationship="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamList" FromRole="tb_ParamList" ToRole="tb_ParamListValues" />
+          <NavigationProperty Name="tb_ValuesOfReport_Lists" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamList" FromRole="tb_ParamList" ToRole="tb_ValuesOfReport_Lists" />
+          <NavigationProperty Name="tb_ValuesOfReports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamList" FromRole="tb_ParamList" ToRole="tb_ValuesOfReports" />
+        </EntityType>
+        <EntityType Name="tb_ParamListValues">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParamListID" Type="Int32" />
+          <Property Name="ParamNameID" Type="Int32" />
+          <Property Name="Val" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Val2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Tolerance" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_ParamList" Relationship="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamList" FromRole="tb_ParamListValues" ToRole="tb_ParamList" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamName" FromRole="tb_ParamListValues" ToRole="tb_ParamName" />
+        </EntityType>
+        <EntityType Name="tb_ParamName">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="WireID" Type="Int32" />
+          <Property Name="UnitID" Type="Int32" />
+          <Property Name="Formula" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="ShowParam" Type="Int32" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="CreateTime" Type="DateTime" Precision="0" />
+          <Property Name="ModifyBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+          <Property Name="ModifiedTime" Type="Time" Precision="7" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CatagoryID" Type="Int32" />
+          <Property Name="Enable" Type="Int32" />
+          <NavigationProperty Name="tb_Catagory" Relationship="WireTestSoftwareDBModel.FK_tb_ParamName_tb_Catagory" FromRole="tb_ParamName" ToRole="tb_Catagory" />
+          <NavigationProperty Name="tb_ParamList" Relationship="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamName" FromRole="tb_ParamName" ToRole="tb_ParamList" />
+          <NavigationProperty Name="tb_ParamListValues" Relationship="WireTestSoftwareDBModel.FK_tb_ParamListValues_tb_ParamName" FromRole="tb_ParamName" ToRole="tb_ParamListValues" />
+          <NavigationProperty Name="tb_Unit" Relationship="WireTestSoftwareDBModel.FK_tb_ParamName_tb_ParamName" FromRole="tb_ParamName" ToRole="tb_Unit" />
+          <NavigationProperty Name="tb_ParamTypes" Relationship="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_ParamTypes" FromRole="tb_ParamName" ToRole="tb_ParamTypes" />
+          <NavigationProperty Name="tb_Wirename" Relationship="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_Wirename" FromRole="tb_ParamName" ToRole="tb_Wirename" />
+          <NavigationProperty Name="tb_ParamValue" Relationship="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_ParamName" FromRole="tb_ParamName" ToRole="tb_ParamValue" />
+          <NavigationProperty Name="tb_ValuesOfReport_Lists" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamName" FromRole="tb_ParamName" ToRole="tb_ValuesOfReport_Lists" />
+          <NavigationProperty Name="tb_ValuesOfReports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamName" FromRole="tb_ParamName" ToRole="tb_ValuesOfReports" />
+        </EntityType>
+        <EntityType Name="tb_ParamTypes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParamName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_ParamList" Relationship="WireTestSoftwareDBModel.FK_tb_ParamList_tb_ParamTypes" FromRole="tb_ParamTypes" ToRole="tb_ParamList" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_ParamTypes" FromRole="tb_ParamTypes" ToRole="tb_ParamName" />
+        </EntityType>
+        <EntityType Name="tb_ParamValue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParamNameID" Type="Int32" />
+          <Property Name="ProductID" Type="Int32" />
+          <Property Name="Val1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Val2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tolerance" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_ParamName" FromRole="tb_ParamValue" ToRole="tb_ParamName" />
+          <NavigationProperty Name="tb_Product" Relationship="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_Product" FromRole="tb_ParamValue" ToRole="tb_Product" />
+        </EntityType>
+        <EntityType Name="tb_Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WirenameID" Type="Int32" />
+          <Property Name="DegreeID" Type="Int32" />
+          <Property Name="SizeID" Type="Int32" />
+          <Property Name="Grade" Type="Int32" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="CreateTime" Type="DateTime" Precision="0" />
+          <Property Name="ModifyBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+          <Property Name="ModifiedTime" Type="Time" Precision="7" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Enable" Type="Int32" />
+          <NavigationProperty Name="tb_Degree" Relationship="WireTestSoftwareDBModel.FK_tb_Product_tb_Degree" FromRole="tb_Product" ToRole="tb_Degree" />
+          <NavigationProperty Name="tb_ParamValue" Relationship="WireTestSoftwareDBModel.FK_tb_ParamValue_tb_Product" FromRole="tb_Product" ToRole="tb_ParamValue" />
+          <NavigationProperty Name="tb_Size" Relationship="WireTestSoftwareDBModel.FK_tb_Product_tb_Size" FromRole="tb_Product" ToRole="tb_Size" />
+          <NavigationProperty Name="tb_Wirename" Relationship="WireTestSoftwareDBModel.FK_tb_Product_tb_Wirename" FromRole="tb_Product" ToRole="tb_Wirename" />
+          <NavigationProperty Name="tb_Reports" Relationship="WireTestSoftwareDBModel.FK_tb_Reports_tb_Product" FromRole="tb_Product" ToRole="tb_Reports" />
+          <NavigationProperty Name="tb_ValuesOfReports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Product" FromRole="tb_Product" ToRole="tb_ValuesOfReports" />
+        </EntityType>
+        <EntityType Name="tb_Reports">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReportName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Result" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ProductID" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Enable" Type="Int32" />
+          <Property Name="Customer" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="OtherSpec" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="InvDate" Type="DateTime" Precision="0" />
+          <Property Name="Qty" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Winding" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Surface" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Edge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Polythene" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Box" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Wrapper" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Trace" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Weight" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Size" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_Product" Relationship="WireTestSoftwareDBModel.FK_tb_Reports_tb_Product" FromRole="tb_Reports" ToRole="tb_Product" />
+          <NavigationProperty Name="tb_ValuesOfReport_Lists" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_Reports" FromRole="tb_Reports" ToRole="tb_ValuesOfReport_Lists" />
+          <NavigationProperty Name="tb_ValuesOfReports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Reports" FromRole="tb_Reports" ToRole="tb_ValuesOfReports" />
+          <Property Name="Cover" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="InvNo" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Clean" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tb_Size">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Size" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="CreateTime" Type="DateTime" Precision="0" />
+          <Property Name="ModifyBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+          <Property Name="ModifiedTime" Type="Time" Precision="7" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Enable" Type="Int32" />
+          <NavigationProperty Name="tb_Product" Relationship="WireTestSoftwareDBModel.FK_tb_Product_tb_Size" FromRole="tb_Size" ToRole="tb_Product" />
+        </EntityType>
+        <EntityType Name="tb_Unit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Unit" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_ParamList" Relationship="WireTestSoftwareDBModel.FK_tb_ParamList_tb_Unit" FromRole="tb_Unit" ToRole="tb_ParamList" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamName_tb_ParamName" FromRole="tb_Unit" ToRole="tb_ParamName" />
+        </EntityType>
+        <EntityType Name="tb_ValuesOfReport_Lists">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ValRepID" Type="Int32" />
+          <Property Name="ParamListID" Type="Int32" />
+          <Property Name="ParamNameID" Type="Int32" />
+          <Property Name="ReportID" Type="Int32" />
+          <Property Name="Val1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Tolerance" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="Status" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Rand_Numb" Type="Int32" />
+          <NavigationProperty Name="tb_ParamList" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamList" FromRole="tb_ValuesOfReport_Lists" ToRole="tb_ParamList" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ParamName" FromRole="tb_ValuesOfReport_Lists" ToRole="tb_ParamName" />
+          <NavigationProperty Name="tb_Reports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_Reports" FromRole="tb_ValuesOfReport_Lists" ToRole="tb_Reports" />
+          <NavigationProperty Name="tb_ValuesOfReports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports" FromRole="tb_ValuesOfReport_Lists" ToRole="tb_ValuesOfReports" />
+        </EntityType>
+        <EntityType Name="tb_ValuesOfReports">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParamNameID" Type="Int32" />
+          <Property Name="ParamNameListID" Type="Int32" />
+          <Property Name="ProductID" Type="Int32" />
+          <Property Name="Val1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Val2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tolerance" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ReportID" Type="Int32" />
+          <NavigationProperty Name="tb_ParamList" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamList" FromRole="tb_ValuesOfReports" ToRole="tb_ParamList" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_ParamName" FromRole="tb_ValuesOfReports" ToRole="tb_ParamName" />
+          <NavigationProperty Name="tb_Product" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Product" FromRole="tb_ValuesOfReports" ToRole="tb_Product" />
+          <NavigationProperty Name="tb_Reports" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReports_tb_Reports" FromRole="tb_ValuesOfReports" ToRole="tb_Reports" />
+          <NavigationProperty Name="tb_ValuesOfReport_Lists" Relationship="WireTestSoftwareDBModel.FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports" FromRole="tb_ValuesOfReports" ToRole="tb_ValuesOfReport_Lists" />
+        </EntityType>
+        <EntityType Name="tb_Wirename">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Wirename" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="CreateTime" Type="DateTime" Precision="0" />
+          <Property Name="ModifyBy" Type="Int32" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+          <Property Name="ModifiedTime" Type="Time" Precision="7" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Enable" Type="Int32" />
+          <NavigationProperty Name="tb_ParamName" Relationship="WireTestSoftwareDBModel.FK_tb_ParamNames_tb_Wirename" FromRole="tb_Wirename" ToRole="tb_ParamName" />
+          <NavigationProperty Name="tb_Product" Relationship="WireTestSoftwareDBModel.FK_tb_Product_tb_Wirename" FromRole="tb_Wirename" ToRole="tb_Product" />
+        </EntityType>
+        <Association Name="FK_tb_ParamName_tb_Catagory">
+          <End Type="WireTestSoftwareDBModel.tb_Catagory" Role="tb_Catagory" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Catagory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="CatagoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Product_tb_Degree">
+          <End Type="WireTestSoftwareDBModel.tb_Degree" Role="tb_Degree" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_Product" Role="tb_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Degree">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Product">
+              <PropertyRef Name="DegreeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamList_tb_ParamName">
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamList" Role="tb_ParamList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamList">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamList_tb_ParamTypes">
+          <End Type="WireTestSoftwareDBModel.tb_ParamTypes" Role="tb_ParamTypes" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamList" Role="tb_ParamList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamList">
+              <PropertyRef Name="ParamTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamList_tb_Unit">
+          <End Type="WireTestSoftwareDBModel.tb_Unit" Role="tb_Unit" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamList" Role="tb_ParamList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Unit">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamList">
+              <PropertyRef Name="UnitID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamListValues_tb_ParamList">
+          <End Type="WireTestSoftwareDBModel.tb_ParamList" Role="tb_ParamList" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamListValues" Role="tb_ParamListValues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamList">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamListValues">
+              <PropertyRef Name="ParamListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_ParamList">
+          <End Type="WireTestSoftwareDBModel.tb_ParamList" Role="tb_ParamList" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists" Role="tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamList">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ParamListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_ParamList">
+          <End Type="WireTestSoftwareDBModel.tb_ParamList" Role="tb_ParamList" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReports" Role="tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamList">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ParamNameListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamListValues_tb_ParamName">
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamListValues" Role="tb_ParamListValues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamListValues">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamName_tb_ParamName">
+          <End Type="WireTestSoftwareDBModel.tb_Unit" Role="tb_Unit" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Unit">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="UnitID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamNames_tb_ParamTypes">
+          <End Type="WireTestSoftwareDBModel.tb_ParamTypes" Role="tb_ParamTypes" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamTypes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamNames_tb_Wirename">
+          <End Type="WireTestSoftwareDBModel.tb_Wirename" Role="tb_Wirename" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Wirename">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamName">
+              <PropertyRef Name="WireID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamValue_tb_ParamName">
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamValue" Role="tb_ParamValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamValue">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_ParamName">
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists" Role="tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_ParamName">
+          <End Type="WireTestSoftwareDBModel.tb_ParamName" Role="tb_ParamName" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReports" Role="tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ParamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ParamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ParamValue_tb_Product">
+          <End Type="WireTestSoftwareDBModel.tb_Product" Role="tb_Product" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ParamValue" Role="tb_ParamValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ParamValue">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Product_tb_Size">
+          <End Type="WireTestSoftwareDBModel.tb_Size" Role="tb_Size" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_Product" Role="tb_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Size">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Product">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Product_tb_Wirename">
+          <End Type="WireTestSoftwareDBModel.tb_Wirename" Role="tb_Wirename" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_Product" Role="tb_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Wirename">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Product">
+              <PropertyRef Name="WirenameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Reports_tb_Product">
+          <End Type="WireTestSoftwareDBModel.tb_Product" Role="tb_Product" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_Reports" Role="tb_Reports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_Reports">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_Product">
+          <End Type="WireTestSoftwareDBModel.tb_Product" Role="tb_Product" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReports" Role="tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_Reports">
+          <End Type="WireTestSoftwareDBModel.tb_Reports" Role="tb_Reports" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists" Role="tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Reports">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ReportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReports_tb_Reports">
+          <End Type="WireTestSoftwareDBModel.tb_Reports" Role="tb_Reports" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReports" Role="tb_ValuesOfReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Reports">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReports">
+              <PropertyRef Name="ReportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_ValuesOfReport_Lists_tb_ValuesOfReports">
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReports" Role="tb_ValuesOfReports" Multiplicity="0..1" />
+          <End Type="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists" Role="tb_ValuesOfReport_Lists" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_ValuesOfReports">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tb_ValuesOfReport_Lists">
+              <PropertyRef Name="ValRepID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WireTestSoftwareDBModelStoreContainer" CdmEntityContainer="WireTestSoftwareDBEntities">
+          <EntitySetMapping Name="tb_Catagory">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Catagory">
+              <MappingFragment StoreEntitySet="tb_Catagory">
+                <ScalarProperty Name="CatagoryName" ColumnName="CatagoryName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Degree">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Degree">
+              <MappingFragment StoreEntitySet="tb_Degree">
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Employee">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Employee">
+              <MappingFragment StoreEntitySet="tb_Employee">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ParamList">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamList">
+              <MappingFragment StoreEntitySet="tb_ParamList">
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ParamTypeID" ColumnName="ParamTypeID" />
+                <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ParamListValues">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamListValues">
+              <MappingFragment StoreEntitySet="tb_ParamListValues">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+                <ScalarProperty Name="Val2" ColumnName="Val2" />
+                <ScalarProperty Name="Val" ColumnName="Val" />
+                <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+                <ScalarProperty Name="ParamListID" ColumnName="ParamListID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ParamName">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamName">
+              <MappingFragment StoreEntitySet="tb_ParamName">
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="CatagoryID" ColumnName="CatagoryID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ShowParam" ColumnName="ShowParam" />
+                <ScalarProperty Name="Formula" ColumnName="Formula" />
+                <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+                <ScalarProperty Name="WireID" ColumnName="WireID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ParamTypes">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamTypes">
+              <MappingFragment StoreEntitySet="tb_ParamTypes">
+                <ScalarProperty Name="ParamName" ColumnName="ParamName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ParamValue">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ParamValue">
+              <MappingFragment StoreEntitySet="tb_ParamValue">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+                <ScalarProperty Name="Val2" ColumnName="Val2" />
+                <ScalarProperty Name="Val1" ColumnName="Val1" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Product">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Product">
+              <MappingFragment StoreEntitySet="tb_Product">
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+                <ScalarProperty Name="DegreeID" ColumnName="DegreeID" />
+                <ScalarProperty Name="WirenameID" ColumnName="WirenameID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Reports">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Reports">
+              <MappingFragment StoreEntitySet="tb_Reports">
+                <ScalarProperty Name="Clean" ColumnName="Clean" />
+                <ScalarProperty Name="InvNo" ColumnName="InvNo" />
+                <ScalarProperty Name="Cover" ColumnName="Cover" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Trace" ColumnName="Trace" />
+                <ScalarProperty Name="Wrapper" ColumnName="Wrapper" />
+                <ScalarProperty Name="Box" ColumnName="Box" />
+                <ScalarProperty Name="Polythene" ColumnName="Polythene" />
+                <ScalarProperty Name="Edge" ColumnName="Edge" />
+                <ScalarProperty Name="Surface" ColumnName="Surface" />
+                <ScalarProperty Name="Winding" ColumnName="Winding" />
+                <ScalarProperty Name="Qty" ColumnName="Qty" />
+                <ScalarProperty Name="InvDate" ColumnName="InvDate" />
+                <ScalarProperty Name="OtherSpec" ColumnName="OtherSpec" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Size">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Size">
+              <MappingFragment StoreEntitySet="tb_Size">
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Unit">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Unit">
+              <MappingFragment StoreEntitySet="tb_Unit">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ValuesOfReport_Lists">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ValuesOfReport_Lists">
+              <MappingFragment StoreEntitySet="tb_ValuesOfReport_Lists">
+                <ScalarProperty Name="Rand_Numb" ColumnName="Rand_Numb" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+                <ScalarProperty Name="Val1" ColumnName="Val1" />
+                <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+                <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+                <ScalarProperty Name="ParamListID" ColumnName="ParamListID" />
+                <ScalarProperty Name="ValRepID" ColumnName="ValRepID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_ValuesOfReports">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_ValuesOfReports">
+              <MappingFragment StoreEntitySet="tb_ValuesOfReports">
+                <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+                <ScalarProperty Name="Val2" ColumnName="Val2" />
+                <ScalarProperty Name="Val1" ColumnName="Val1" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ParamNameListID" ColumnName="ParamNameListID" />
+                <ScalarProperty Name="ParamNameID" ColumnName="ParamNameID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Wirename">
+            <EntityTypeMapping TypeName="WireTestSoftwareDBModel.tb_Wirename">
+              <MappingFragment StoreEntitySet="tb_Wirename">
+                <ScalarProperty Name="Enable" ColumnName="Enable" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModifiedTime" ColumnName="ModifiedTime" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Wirename" ColumnName="Wirename" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

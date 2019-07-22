@@ -1,0 +1,154 @@
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\WireTestingProject.exe.config
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\WireTestingProject.exe
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\WireTestingProject.pdb
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\WireLibrary.dll
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\WireLibrary.pdb
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.xml
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.csprojResolveAssemblyReference.cache
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Degree.resources
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Form1.resources
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Properties.Resources.resources
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Size.resources
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Wirename.resources
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.csproj.GenerateResource.Cache
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.exe
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.pdb
+c:\users\gurkaran singh\documents\visual studio 2013\Projects\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Products.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\WireTestingProject.exe.config
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.exe
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.pdb
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\WireTestingProject.exe
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\WireTestingProject.pdb
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.dll
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\WireLibrary.dll
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\WireLibrary.pdb
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.xml
+C:\Gurkaran\WireTestingProject\WireTestingProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.csprojResolveAssemblyReference.cache
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Degree.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Form1.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Login.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Products.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Properties.Resources.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Size.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.Wirename.resources
+C:\Gurkaran\WireTestingProject\WireTestingProject\obj\Debug\WireTestingProject.csproj.GenerateResource.Cache
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csprojResolveAssemblyReference.cache
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.CreateReport.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Degree.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.MasterPage.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Login.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Naming.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Value.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Products.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Properties.Resources.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Report_List.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Size.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wire_Test_Report.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wirename.resources
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csproj.GenerateResource.Cache
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe.licenses
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.cache
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.compiled
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe.config
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.pdb
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.xml
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe
+C:\Users\Gurkaran Singh\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.pdb
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe.config
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.pdb
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.dll
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.xml
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.CreateReport.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Degree.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.MasterPage.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Login.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Naming.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Value.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Products.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Properties.Resources.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Report_List.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Size.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wire_Test_Report.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wirename.resources
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csproj.GenerateResource.Cache
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe.licenses
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.cache
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.compiled
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.pdb
+C:\Users\Gurkaran Singh\Desktop\NEw Wire\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csprojResolveAssemblyReference.cache
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe.config
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.pdb
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.dll
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.pdb
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.xml
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csprojResolveAssemblyReference.cache
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.CreateReport.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Degree.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.MasterPage.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Login.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Naming.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Value.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Products.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Properties.Resources.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Report_List.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Size.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wire_Test_Report.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wirename.resources
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csproj.GenerateResource.Cache
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe.licenses
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.cache
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.compiled
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe
+C:\Users\PC-2\Desktop\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.pdb
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe.config
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.exe
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireTestingProject.pdb
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.dll
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\WireLibrary.pdb
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.xml
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csprojResolveAssemblyReference.cache
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Create_Report_List_Value.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.CreateReport.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Degree.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.List_Values.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.MasterPage.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Login.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_List_Naming.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Naming.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Parameter_Value.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Products.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Properties.Resources.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Report_List.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Size.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wire_Test_Report.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.Wirename.resources
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.csproj.GenerateResource.Cache
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe.licenses
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.cache
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\RdlCompile.compiled
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.exe
+C:\Users\Gurkaran Singh\Documents\WireTesting Project [Working On]\WireTestingProject\obj\Debug\WireTestingProject.pdb

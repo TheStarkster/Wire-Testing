@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C10D88FF-21E0-4A24-A005-66B24BD8D6B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WireTestingProject</RootNamespace>
+    <AssemblyName>WireTestingProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Create Report List Value.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Report List Value.Designer.cs">
+      <DependentUpon>Create Report List Value.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReport.designer.cs">
+      <DependentUpon>CreateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Degree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Degree.Designer.cs">
+      <DependentUpon>Degree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List Values.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List Values.Designer.cs">
+      <DependentUpon>List Values.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Designer.cs">
+      <DependentUpon>MasterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter List Naming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameter List Naming.Designer.cs">
+      <DependentUpon>Parameter List Naming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter Naming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameter Naming.Designer.cs">
+      <DependentUpon>Parameter Naming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter Value.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameter Value.Designer.cs">
+      <DependentUpon>Parameter Value.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report List.Designer.cs">
+      <DependentUpon>Report List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSet.cs">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Size.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Size.Designer.cs">
+      <DependentUpon>Size.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wire Test Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wire Test Report.Designer.cs">
+      <DependentUpon>Wire Test Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wirename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wirename.Designer.cs">
+      <DependentUpon>Wirename.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Create Report List Value.resx">
+      <DependentUpon>Create Report List Value.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateReport.resx">
+      <DependentUpon>CreateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Degree.resx">
+      <DependentUpon>Degree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List Values.resx">
+      <DependentUpon>List Values.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage.resx">
+      <DependentUpon>MasterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameter List Naming.resx">
+      <DependentUpon>Parameter List Naming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameter Naming.resx">
+      <DependentUpon>Parameter Naming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameter Value.resx">
+      <DependentUpon>Parameter Value.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report List.resx">
+      <DependentUpon>Report List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTest.rdlc" />
+    <EmbeddedResource Include="Size.resx">
+      <DependentUpon>Size.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wire Test Report.resx">
+      <DependentUpon>Wire Test Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wirename.resx">
+      <DependentUpon>Wirename.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WireLibrary\WireLibrary.csproj">
+      <Project>{52b5d657-33b1-43dc-b404-23a3ca9c4593}</Project>
+      <Name>WireLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\wire-icon-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\svg_ruler-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\img_231353.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\MetroUI_GrooveShark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\4tblogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\params.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Editbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\61848.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
